@@ -1,14 +1,16 @@
 const router = require('express').Router();
-const { notesData } = require('../../db/db');
+const { notes } = require('../../db/db');
+const { createNewNote } = require('../../lib/notes');
 
 router.get('/notes', (req, res) => {
-    let notes = notesData;
-    res.json(notes);
+    let noteData = notes;
+    res.json(noteData);
 });
 
 router.post('/notes', (req, res) => {
-    req.body.id = db.length.toString();
-
+    req.body.id = notes.length.toString();
+    const note = createNewNote(req.body, notes);
+    res.json(note);
 });
 
 router.delete('/notes/:id', (req, res) => {
