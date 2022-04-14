@@ -1,5 +1,5 @@
 {
-  "notes": [
+  "noteArr": [
     {
       "title": "Test Title",
       "text": "Test text",
@@ -12,23 +12,8 @@
     },
     {
       "title": "post test",
-      "text": "this is words",
+      "text": "this is more words",
       "id": "2"
-    },
-    {
-      "title": "post test",
-      "text": "this is more words",
-      "id": "3"
-    },
-    {
-      "title": "post test",
-      "text": "this is more words",
-      "id": "4"
-    },
-    {
-      "title": "sfdgsdg",
-      "text": "sdgsdgsd",
-      "id": "5"
     }
   ]
 }
